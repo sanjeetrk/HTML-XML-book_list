@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Catalog</title>
+</head>
+<body>
+    <label for="language">Choose Language:</label>
+    <select id="language" onchange="updateBooks()">
+        <option value="">Select Language</option>
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Bengali">Bengali</option>
+    </select>
+<br>
+    <label for="category">Choose Category:</label>
+    <select id="category" onchange="updateBooks()">
+        <option value="">Select Category</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Classics">Classics</option>
+        <option value="Non-Fiction">Non-Fiction</option>
+        <option value="Poetry">Poetry</option>
+    </select>
+
+    <div id="bookDetails"></div>
+
+    <script src="bookScript.js"></script>
+</body>
+</html>
